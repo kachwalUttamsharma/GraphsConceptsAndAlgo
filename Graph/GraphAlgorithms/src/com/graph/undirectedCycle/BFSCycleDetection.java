@@ -26,7 +26,7 @@ public class BFSCycleDetection {
 				if(vis[it] == false) {
 					q.add(new Node(it, currNode));
 					vis[it] = true;
-				} else if(parentNode != currNode) {
+				} else if(parentNode != it) {
 					return true;
 				}
 			}
